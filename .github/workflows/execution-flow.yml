@@ -78,7 +78,7 @@ jobs:
   report:
     needs: [lint, deploy]
     if: failure()
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Output information
       run: |
